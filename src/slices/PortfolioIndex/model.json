@@ -1,0 +1,67 @@
+{
+  "id": "portfolio_index",
+  "type": "SharedSlice",
+  "name": "PortfolioIndex",
+  "description": "PortfolioIndex",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image_gallery": {
+          "type": "Group",
+          "config": {
+            "label": "Image Gallery",
+            "repeat": true,
+            "fields": {
+              "images": {
+                "type": "Image",
+                "config": {
+                  "label": "Images",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "category_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Category_name",
+                  "placeholder": ""
+                }
+              },
+              "hyperlink_image": {
+                "type": "Link",
+                "config": {
+                  "label": "Hyperlink Image",
+                  "placeholder": "",
+                  "select": null
+                }
+              }
+            }
+          }
+        },
+        "categories": {
+          "type": "Group",
+          "config": {
+            "label": "Categories",
+            "repeat": true,
+            "fields": {
+              "category_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Category Name",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
